@@ -31,6 +31,11 @@ function gradeQuiz(candidateAnswers) {
   // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
   console.log('Your answer:', candidateAnswer);
   console.log('Correct answer:', correctAnswer);
+  if(candidateAnswer.toLowerCase() === correctAnswer.toLowerCase()){
+    console.log('Great! Your answer was correct!');
+  } else {
+    console.log("Oops! Your answer is incorrect or not full enough.")
+  }
 
 
 
