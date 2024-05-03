@@ -31,12 +31,11 @@ function gradeQuiz(candidateAnswers) {
   // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
   console.log('Your answer:', candidateAnswer);
   console.log('Correct answer:', correctAnswer);
-  if(candidateAnswer.toLowerCase() === correctAnswer.toLowerCase()){
-    console.log('Great! Your answer was correct!');
-  } else {
-    console.log("Oops! Your answer is incorrect or not full enough.")
+  let answerCheck = 'correct';
+  if(candidateAnswer.toLowerCase() !== correctAnswer.toLowerCase()){
+    answerCheck = 'incorrect';
   }
-
+  console.log(`Result: Your answer is ${answerCheck}`);
 
 
   let grade;  //TODO 3.2 use this variable to calculate the candidates score.
