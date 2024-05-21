@@ -44,8 +44,8 @@ function gradeQuiz(candidateAnswers) {
   // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
   console.log(`Results of the quiz are below.\n Candidate name: ${candidateName}`);
 
-  let answerCheck = "incorrect";
   for(let index = 0; index < questions.length; index++){
+    let answerCheck = "incorrect";
     if(String(candidateAnswers[index]).toLowerCase() === String(correctAnswers[index]).toLowerCase()) {
       answerCheck = "correct";
     }
